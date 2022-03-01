@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div
+            {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                position: relative;
+                border-style: dotted;
+                border-width: 10px;
+                animation-name: first;
+                animation-duration: 5s;
+                animation-direction: alternate;
+                animation-iteration-count: 5;
+            }
+
+            @keyframes first
+            {
+                0% {background-color: blue; left: 0px; top: 0px;}
+                25% {background-color: aquamarine; left: 200px; top: 0px;}
+                50% {backgroud-color: red; left: 200px; top: 200px;}
+                75% {background-color: coral; left:0px; top: 200px;}
+                100% {background-color: blue; left: 0px; top: 0px;}
+            }
+
+            div2
+            {
+                width: 100px;
+                height: 100px;
+                background-color: white;
+                border-style: solid;
+                border-width: 5px;
+                position: relative;
+                animation-name: second;
+                animation-duration: 10s;
+                animation-direction: alternate;
+                animation-delay: 5s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes second
+            {
+                0% {left: 0px; top: 0px; rotate: 0deg;}
+                25% {left: 250px; top: 250px; rotate: 90deg;}
+                50% {left: 500px; top: 500px; rotate: 90deg;}
+                75% {left: 750px; top: 750px; rotate: 90deg;}
+                100% {left: 1000px; top: 1000px; rotate: 90deg;}
+            }
+        </style>
+    </head>
+
+
+
+    <body>
+        <div></div>
+        <div2>This is a test.</div2>
+    </body>
+</html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html> -->

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+        </style>
+
+
+        <script>
+            alert("Wlcome to my website!");
+            firstName = prompt("Please enter your first name.");
+            lastName = prompt("Please enter your last name.");
+            fullName = firstName + " " + lastName;
+            alert(fullName + ", how is it going?");
+        </script>
+    </head>
+
+    <body>
+        <h1 id="one">First</h1>
+        <h2 id="two">second</h2>
+        <h3 id="three" onclick="one()">third</h3>
+        <h4 id="four" onmouseover="two()">fourth</h4>
+        <h5 id="five">fifth</h5>
+        <h6 id="six" onmouseover="three()" onmouseout="four()">sixth</h6>
+        <h7 id="seven">Seventh</h7>
+        <h1 id="one1" onmouseover="six()">H1 Part 1</h1>
+        <h1 id="one2">H1 part 2 </h1>
+        <h3 id="three1">H3 Part 1 </h3>
+        <h3 id="three2" onmouseover="seven()" onmouseout="eight()">H3 Part 2</h3>
+        <h4 id="four1" onclick="five()">H4 Part 1</h4>
+        <h4 id="four2">H4 Part 2</h4>
+        <p id="p1">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercita</p>
+        <p id="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <em id="em1">Test</em>
+        <em id="em2">Test2</em>
+        <img id="img" src="shrek.jfif" alt="shrek" onclick="nine()">
+        
+        <script>
+            function one()
+            {
+                document.body.style.backgroundColor = "teal";
+                document.getElementById("three").style.backgroundColor = "purple";
+            }
+            function two()
+            {
+                document.getElementById("one").style.color = "red";
+                document.getElementById("one").style.fontSize = "56px";
+            }
+            function three()
+            {
+                document.getElementById("six").style.color = "pink";
+                document.getElementById("seven").style.textDecoration = "underline";
+            }
+            function four()
+            {
+                document.getElementById("six").style.color = "black";
+                document.getElementById("seven").style.textDecoration = "none"
+            }
+            function five()
+            {
+                color = String(prompt("Enter a color"));
+                document.getElementById("four1").style.color = color;
+            }
+            function six()
+            {
+                document.getElementById("one1").style.color = "green";
+                document.getElementById("p2").style.textDecoration = "underline";
+            }
+            function seven()
+            {
+                document.getElementById("three2").style.color = "violet";
+                document.getElementById("three2").style.textDecoration = "underline";
+            }
+            function eight()
+            {
+                document.getElementById("three2").style.color = "black";
+                document.getElementById("three2").style.textDecoration = "none"; 
+            }
+            function nine()
+            {
+                document.getElementById("p1").style.fontSize = "10pt";
+                document.getElementById("p1").style.color = "orange";
+            }
+        </script>
+    </body>
+</html>
