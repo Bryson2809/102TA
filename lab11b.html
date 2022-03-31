@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            
+        </style>
+    </head>
+
+    <body>
+        <script>
+            function rotate()
+            {
+                var first = document.getElementById("dog1").src;
+                var second = document.getElementById("dog2").src;
+                var third = document.getElementById("dog3").src;
+                var fourth = document.getElementById("dog4").src;
+
+                document.getElementById("dog1").src = fourth;
+                document.getElementById("dog2").src = first;
+                document.getElementById("dog3").src = second;
+                document.getElementById("dog4").src = third;
+            }
+        </script>
+
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    <img src="dog1.jpg" id="dog1" alt="dog1" onmouseover="rotate()">
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="dog4.jpg" id="dog4" alt="dog4" onmouseover="rotate()">
+                </td>
+
+            <td></td>
+            <td>
+                <img src="dog2.jpg" id="dog2" alt="dog2" onmouseover="rotate()"> 
+            </td>
+        </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <img src="dog3.jpg" id="dog3" alt="dog3" onmouseover="rotate()">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>
