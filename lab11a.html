@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .theLinks {
+                position:relative;
+                top:35%;
+                width:100%;
+                text-align:center;
+            }
+
+            .theLinks a {
+                display:block;
+                font-size:25pt;
+                font-weight:bold;
+            }
+
+            #navig {
+                position:fixed;
+                width:0;
+                height:60%;
+                z-index:1;
+                overflow-x:hidden;
+                background-color:aquamarine;
+                opacity:0.6;
+                transition:3s;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            function opener()
+            {
+                document.getElementById("navig").style.width="100%";
+            }
+            function closer()
+            {
+                document.getElementById("navig").style.width="0%";
+            }
+        </script>
+
+        <div id="navig">
+            <a id="closing" href="javascript:closer()" style="position:absolute; right:40pt;">
+                Close
+                <div class="theLinks">
+                    <a href="lab11b.html">lab11b</a>
+                    <a href="lab07b.html">lab7b</a>
+                </div>
+            </a>
+        </div>
+            
+        <div>
+            <h3><span onclick="opener()">MENU</span></h3>
+            <p>
+                One 
+                Two 
+                Three 
+            </p>
+        </div>
+    </body>
+</html>
